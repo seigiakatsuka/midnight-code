@@ -1,4 +1,13 @@
-This is a portfolio site built with Next.js
+This is a portfolio site built with Next.js, shadcn, and supabase.
+
+# TO-DO's
+
+- Connect Supabase DB to project and import projects and images. (17/11/25)
+- Complete Contact Form connection to email. (17/11/25)
+- Create layout for blog page. (17/11/25)
+- Create a Login in page for users to comment on blog posts. (using Email or OFA) (17/11/25)
+- Create Scroll component for Tools/Skills section. (17/11/25)
+- Connect Project Card components to DB. (17/11/25)
 
 ## Landing Page
 
@@ -15,7 +24,7 @@ Primary Skills (daily)
 - Tailwindcss
 - Supabase
 
-comfortable with
+Comfortable with
 
 - HTML
 - JavaScript
@@ -28,4 +37,5 @@ Works list section of work that is completed or in progress.
 ## Contact
 
 Added contact form
+
 # midnight-code
