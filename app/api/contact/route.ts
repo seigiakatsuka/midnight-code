@@ -10,9 +10,12 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export async function POST(request: Request) {
   try {
     const raw = (await request.json()) as unknown;
-    let name = "";
-    let email = "";
-    let message = "";
+    const name = "";
+    const email = "";
+    const message = "";
+    const website = "";
+    const budget = "";
+    const deadline = "";
     if (typeof raw === "object" && raw !== null) {
       const body = raw as {
         name?: unknown;
@@ -111,7 +114,9 @@ export async function POST(request: Request) {
       text: `
         Name: ${name}
         Email: ${email}
-        
+        Website: ${website}
+        Budget: ${budget}
+        Deadline: ${deadline}
         
         Message:
         ${message}
@@ -132,6 +137,7 @@ export async function POST(request: Request) {
               /\n/g,
               "<br>"
             )}</p>
+            <p>${website.replace(/\n/g, "<br>")}</p>
           </div>
           
           <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import ContactForm from "@/components/contactForm/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact - Midnight Code",
@@ -10,6 +11,7 @@ export default function Contact() {
   return (
     <>
       <div>Contact Page</div>
+      <ContactForm />
     </>
   );
 }
