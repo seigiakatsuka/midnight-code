@@ -2,9 +2,7 @@
 // projectData function to fetch project data
 // *TO-DO* projectImages function to fetch project images
 
-import "server-only";
-
-export async function projectData() {
+export async function PROJECTS() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 

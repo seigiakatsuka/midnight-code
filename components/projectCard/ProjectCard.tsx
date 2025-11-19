@@ -1,11 +1,11 @@
 "use client";
 import { use } from "react";
-import { projectData } from "@/lib/data";
+import { PROJECTS } from "@/lib/data";
 
 export default function ProjectCard() {
   // Fetch project data using the server-side function
 
-  const allProjects = use(projectData());
+  const allProjects = use(PROJECTS());
   return (
     <ul>
       {allProjects.map((project) => (
